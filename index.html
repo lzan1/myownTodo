@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <title>My Other To-Do</title>
+</head>
+<body>
+    <div class="contain">
+        <div class="tabs">
+            <button id = "today-tab" class = "when active">Today</button>
+            <button id = "hereafter-tab" class = "when">Hereafter</button>
+        </div>
+        <input type="text" id = "inputbox">
+        <button id = "add_task" onclick="addTask()">New Task</button>
+        <ul class="show todo" id = "today_tasks">
+        </ul>
+        <ul class="todo" id = "hereafter_tasks">
+        </ul>
+    </div>
+    <footer>
+        <h1 id = "author">Lois Zan</h1>
+        <h1 id = "kopy">Kopyrite 2024. Just for aesthetics</h1>
+    </footer>
+</body>
+</html>
+<script src = "script.js"></script>
