@@ -160,7 +160,7 @@ body{
     text-wrap: wrap;
     height: auto;
     margin-bottom: 20px;
-    padding: 13px 25px;
+    padding: 13px 37px 13px 25px;
     list-style-type: none;
     border-radius: 7px;
     background-color: var(--white);
