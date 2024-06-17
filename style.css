@@ -3,12 +3,12 @@
     padding: 0px;
     box-sizing: border-box;
     --plack: #3F3540;
-    --brown0: #241F16;
-    --brown1: #211B11;
-    --yellow: #FFC100;
-    --purple: #996EFF;
-    --pink: #FD7196;
-    --white: #F4FDEA;
+    --brown0: #E7D9CA;
+    --brown1: #D8C9B4;
+    --yellow: #BA9C31;
+    --purple: #74745A;
+    --pink: #7D642F;
+    --white: #F6F0E0;
 }
 
 body{
@@ -89,12 +89,13 @@ body{
 #inputbox{
     align-self: center;
     width: 100%;
-    background-color: var(--plack);
+    background-color: var(--purple);
     border-radius: 12px;
     color: var(--white);
     padding: 15px 22px;
     border: none;
     outline: none;
+    letter-spacing: 0.1em;
 }
 
 #add_task{
@@ -132,6 +133,7 @@ body{
     display:none;
     position:relative;
     background-color: var(--);
+    letter-spacing: 0.08em;
 }
 
 .todo::before{
@@ -151,20 +153,18 @@ body{
 
 .todo li::before{
     content:'';
+    
 }
 
 .todo li{
     position: relative;
     border: 2px solid;
-    width: 100%;
-    text-wrap: wrap;
-    height: auto;
     margin-bottom: 20px;
     padding: 13px 37px 13px 25px;
     list-style-type: none;
     border-radius: 7px;
     background-color: var(--white);
-    color: var(--brown1);
+    color: var(--pink);
     font-family: 'inter';
     font-size: 13px;
     font-weight: 500;
@@ -186,6 +186,7 @@ body{
 .todo li.checked{
     color: var(--brown0);
     text-decoration: line-through;
+    order: 1;
 }
 
 .todo li.checked:nth-child(3n){
@@ -202,12 +203,8 @@ body{
     background-color: var(--purple);
 }
 
-.todo li.checked:nth-child(3n+1) span{
-    color: var(--brown0);
-}
-
-.todo li.checked:nth-child(3n+2) span{
-    color: var(--brown0);
+.todo li.checked span{
+    color: var(--pink);
 }
 
 .todo li span{
@@ -236,6 +233,7 @@ body{
     border-color: var(--purple);
 }
 
+
 .todo li::after{
     content: '\2714';
     display: grid;
@@ -246,6 +244,7 @@ body{
     top: 0px;
     box-sizing: border-box;
     padding: 0px 10px;
+    color: var(--brown0);
     height: 100%;
     cursor: pointer;
 }
@@ -283,6 +282,7 @@ footer h1{
     font-weight: 400;
     font-size: 0.7em;
     letter-spacing: 0.1em;
+    color: var(--pink);
     position: relative;
 }
 
@@ -295,9 +295,9 @@ footer h1{
     width: 20px;
     top: -3px;
     left: -27px;
-    background-color: var(--white);
-    -webkit-mask: url(images/seedling-solid.svg) no-repeat center;
-    mask: url(images/seedling-solid.svg) no-repeat center;
+    background-color: var(--purple);
+    -webkit-mask: url(images/cat-solid.svg) no-repeat center;
+    mask: url(images/cat-solid.svg) no-repeat center;
 }
 
 #kopy::before{
@@ -307,7 +307,7 @@ footer h1{
     width: 16px;
     top: -1px;
     left: -22px;
-    background-color: var(--white);
+    background-color: var(--purple);
     -webkit-mask: url(images/copyright-regular.svg) no-repeat center;
     mask: url(images/copyright-regular.svg) no-repeat center;
 }
